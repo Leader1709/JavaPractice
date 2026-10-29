@@ -88,20 +88,100 @@
 //  }
 
 
-class hello{
-    public static void main (String args[]){
-        int x=8;
+// class hello{
+//     public static void main (String args[]){
+//         // int x=8;
 
-        if(x<5){
+//         // if(x<5){
             
-            System.out.println("Hello");
-        }
-        else{
-            System.out.println("bye");
-        }
-        System.out.println(x);
-        System.out.println("hello");
+//         //     System.out.println("Hello");
+//         // }
+//         // else{
+//         //     System.out.println("bye");
+//         // }
+        
+//         // System.out.println(x);
+//         // System.out.println("hello");
 
 
-    }
-}
+//         // int x=8;
+//         // int y=10;
+
+//         // if(x<y){
+//         //     System.out.println("x is less than y");
+//         // } else{
+//         //     System.out.println("y is greater than x");
+//         // }
+
+
+//         // if , if else, if else if else , else if ladder, nested if else, switch case
+//         int n=5;
+//         int result=0;
+
+//         // if(n%2==0)
+//         //     result=10;
+//         // else
+//         //     result=20;
+
+//         //?;
+
+//         result = (n%2==0) ? 10 : 20; // its called ternary operator its used to write if else statement in single line
+//         System.out.println(result);
+//     }
+// }
+
+
+
+
+// its switch case its used to write if else statement in single line and its used to write multiple if else statement in single line then its a case breake condtions use in this switch case statement if we not use break statement then it will execute all the cases after the matching case and its called fall through condition
+
+// class hello{
+//     public static void main(String args[]){
+
+        
+//         int n=1;
+
+//         switch(n){
+//             case 1:
+//                 System.out.println("monday");
+//                 break;
+//             case 2:
+//                 System.out.println("tuesday");
+//                 break;
+//             case 3:
+//                 System.out.println("wednesday");
+//                 break;
+//             case 4:
+//                 System.out.println("thursday");
+//                 break;
+//             case 5:
+//                 System.out.println("friday");
+//                 break;
+//             case 6:
+//                 System.out.println("saturday");
+//                 break;
+//             case 7:
+//                 System.out.println("sunday");
+//                 break;
+//         }
+//         // if(n==1)
+//         //     System.out.println("monday");
+//         // else if(n==2)
+//         //     System.out.println("tuesday");
+//         // else if(n==3)
+//         //     System.out.println("wednesday");
+//         // else if(n==4)
+//         //     System.out.println("thursday");
+//         // else if(n==5)
+//         //     System.out.println("friday");
+//         // else if(n==6)
+//         //     System.out.println("saturday");
+//         // else if(n==7)
+//         //     System.out.println("sunday");
+//         // else
+//         //     System.out.println("invalid input");
+//     }
+// }
+
+
+// its called while loop its used to execute a block of code repeatedly until a specified condition is true
