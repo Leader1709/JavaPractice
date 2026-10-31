@@ -41,9 +41,15 @@ public class Demo {
         //loop - while loop, do while loop, for loop, for each loop
 
         // for(int i=1; i<=4; i++) // increment the vlue of i by 1 as output will be hi1, hi2, hi3, hi4
-        for(int i=4; i>=1; i--) // decrement the vlue of i by 1 as output will be hi4, hi3, hi2, hi1
+        // for(int i=4; i>=1; i--) // decrement the vlue of i by 1 as output will be hi4, hi3, hi2, hi1
+        for(int i=0; i<=7; i++) // increment the vlue of i by 1 as output will be hi0, hi1, hi2, hi3, hi4, hi5
         {
-            System.out.println("hi"+i);
+            System.out.println("DAY " + i);
+
+            for(int j=1; j<=9; j++) // increment the vlue of j by 1 as output will be hi1, hi2, hi3, hi4, hi5, hi6, hi7, hi8, hi9
+            {
+                System.out.println("         " + (j+8) + "-" + (j+9));
+            }
         }
     }
 }
