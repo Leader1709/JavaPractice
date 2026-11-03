@@ -55,31 +55,31 @@
 // }
 
 
-class Calculator
-{
-    int a;
-    public int add()
-    {
-        System.out.println("  in Add");
-        return 0;
-    }
-}
+// class Calculator
+// {
+//     int a;
+//     public int add(int n1, int n2)
+//     {
+//       int r=n1+n2;
+//       return r;
+//     }
+// }
 
-class Demo
-{
-    public static void main(String args[])
-    {
-        int num1=4;
-        int num2=5;
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         int num1=4;
+//         int num2=5;
 
-        Calculator calc = new Calculator();
-        int result = calc.add();
-        // int result=num1+num2;
+//         Calculator calc = new Calculator();
+//         int result = calc.add(num1, num2);
+//         // int result=num1+num2;
 
-        System.out.println("The sum of two numbers is: " + result);
+//         System.out.println("The sum of two numbers is: " + result);
         
-    }
-}
+//     }
+// }
 
 
 //Obejct Oriented Programming (OOPs) - Java is an object oriented programming language. It is based on the concept of objects. It provides a clear structure for the programs and allows code to be reused, lowering development costs. The main principles of OOPs are:
@@ -89,3 +89,160 @@ class Demo
 
 
 // Object - Property and behavior of an object is called as object. For example, a dog is an object. It has properties like color, breed, and behavior like barking, wagging tail, etc. In Java, an object is created from a class. A class is a blueprint for creating objects. It defines the properties and behaviors of an object.
+
+
+
+
+
+// class computer
+// {
+//     public void playMusic()
+//     {
+//         System.out.println("Music is playing");
+//     }
+
+//     public String getMeAgain(int cost)
+//     {
+
+//         if (cost >= 10)
+//         return "pen";
+//     else
+//         return "nothing";
+//     }
+// }
+
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+//        computer obj = new computer();
+//        obj.playMusic();
+//        String str= obj.getMeAgain( 10);
+//        System.out.println(str);     
+
+
+//     }
+// }
+
+
+// class Calculator
+// {
+//     public int add( int n1,int n2)
+//     {
+//         return n1*n2;
+//     }
+//     public int add( int n1, int n2, int n3)
+//     {
+//         return n1+n2+n3;
+//     }
+//     public double add( double n1, double n2, double n3)
+//     {
+//         return n1+n2+n3;
+//     }
+// }
+
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         Calculator obj = new Calculator();
+//         double result = obj.add( 4.5, 5.5, 6.5 );
+//         System.out.println( result);
+
+//     }
+// }
+
+
+
+class Calculator
+{
+    int num = 5;
+    public int add( int n1,int n2)
+    {
+        // System.out.println(num);
+        return n1+n2;
+    }
+
+}
+
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         int data = 10;
+
+
+//         Calculator obj = new Calculator();
+//         Calculator obj1 = new Calculator();
+//         int result = obj.add( 3, 4);
+//         // System.out.println(result);
+
+//         obj.num=8;
+//         System.out.println(obj.num);
+//         System.out.println(obj1.num);
+//     }
+// }
+
+
+
+//Arrays - An array is a collection of similar type of data. It is a data structure that stores a fixed-size sequential collection of elements of the same type. An array is used to store a collection of data, but it is often more useful to think of an array as a collection of variables of the same type.
+
+// public class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         // int arr[] = new int[5]; // declaration and instantiation of an array
+//         // arr[0] = 10; // initialization of an array
+//         // arr[1] = 20;
+//         // arr[2] = 30;
+//         // arr[3] = 40;
+//         // arr[4] = 50;
+
+//         // for(int i=0; i<arr.length; i++)
+//         // {
+//         //     System.out.println(arr[i]);
+//         // }
+
+//         // int nums[] = {1, 2, 3, 4, 5}; // declaration, instantiation and initialization of an array
+//         // System.out.println(nums[2]); // accessing the third element of the array
+
+
+//         int nums[] = new int[4]; // declaration and instantiation of an array
+//         nums[0] = 4; // initialization of an array
+//         nums[1] = 5;
+//         nums[2] = 3;
+//         nums[3] = 7;
+
+//         for(int i=0; i<nums.length; i++)
+//         {
+//             System.out.println(nums[i]);
+//         }
+
+//         // System.out.println("The length of the array is: " + nums.length); // accessing the length of the array
+//         // System.out.println("The first element of the array is: " + nums[0]);
+//         // System.out.println("The second element of the array is: " + nums[1]);
+//         // System.out.println("The third element of the array is: " + nums[2]);
+//         // System.out.println("The fourth element of the array is: " + nums[3]);
+
+//     }
+// }
+
+
+public class Demo
+{
+    public static void main(String args[])
+    {
+        int nums[] [] = new int [3][4];
+        Math.random();
+
+        for (int i=0; i<3;i++)
+        {
+            for (int j=0; j<4; j++)
+            {
+                System.out.print(nums[i][j] + " ");
+            }
+            // System.out.println();
+        }
+
+    }
+}
