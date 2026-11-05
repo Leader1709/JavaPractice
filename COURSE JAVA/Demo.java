@@ -238,9 +238,24 @@ public class Demo
         {
             for (int j=0; j<4; j++)
             {
-                int random = (int)(Math.random()*100);
-                nums[i][j] = random;
+                nums[i][j] = (int)(Math.random()*10);
+            }
+        }
+
+
+        for (int i=0; i<3;i++)
+        {
+            for (int j=0; j<4; j++)
+            {
                 System.out.print(nums[i][j] + " ");
+            }
+            System.out.println(" ");
+        }
+        for(int n[] : nums)  //its called as for each loop, it is used to iterate through the elements of an array or a collection. It is a simpler way . its multi demensional array, so we have to use for each loop twice to iterate through the elements of the array.
+        {
+            for(int m : n)
+            {
+                System.out.print(m + " ");
             }
             System.out.println(" ");
         }
