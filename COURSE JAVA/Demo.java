@@ -154,16 +154,16 @@
 
 
 
-class Calculator
-{
-    int num = 5;
-    public int add( int n1,int n2)
-    {
-        // System.out.println(num);
-        return n1+n2;
-    }
+// class Calculator
+// {
+//     int num = 5;
+//     public int add( int n1,int n2)
+//     {
+//         // System.out.println(num);
+//         return n1+n2;
+//     }
 
-}
+// }
 
 // class Demo
 // {
@@ -228,37 +228,86 @@ class Calculator
 // }
 
 
-public class Demo
+// public class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         int nums[] [] = new int [3][4];
+
+//         for (int i=0; i<3;i++)
+//         {
+//             for (int j=0; j<4; j++)
+//             {
+//                 nums[i][j] = (int)(Math.random()*10);
+//             }
+//         }
+
+
+//         for (int i=0; i<3;i++)
+//         {
+//             for (int j=0; j<4; j++)
+//             {
+//                 System.out.print(nums[i][j] + " ");
+//             }
+//             System.out.println(" ");
+//         }
+//         for(int n[] : nums)  //its called as for each loop, it is used to iterate through the elements of an array or a collection. It is a simpler way . its multi demensional array, so we have to use for each loop twice to iterate through the elements of the array.
+//         {
+//             for(int m : n)
+//             {
+//                 System.out.print(m + " ");
+//             }
+//             System.out.println(" ");
+//         }
+
+//     }
+// }
+
+// public class Demo
+// {
+    // public static void main(String args[])
+    // {
+        // StringBuffer sb = new StringBuffer("Keerthi");
+        // sb.append("gowda");
+// 
+        // sb.insert(6, "java "); // its a insert data off offset and string value
+        // sb.setLength(30);  //set length add nullspace inoutput 
+        // sb.ensureCapacity(0);
+        // System.out.println(sb);
+        // 
+// 
+// 
+    // }
+// }
+
+class human{
+    private int age;
+    private String name;
+    public int getAge() {
+        return age;
+    }
+    public String getName() {
+        return name;
+    }
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    
+
+}
+
+
+class Demo
 {
-    public static void main(String args[])
+    public static void main(String args[]) 
     {
-        int nums[] [] = new int [3][4];
-
-        for (int i=0; i<3;i++)
-        {
-            for (int j=0; j<4; j++)
-            {
-                nums[i][j] = (int)(Math.random()*10);
-            }
-        }
-
-
-        for (int i=0; i<3;i++)
-        {
-            for (int j=0; j<4; j++)
-            {
-                System.out.print(nums[i][j] + " ");
-            }
-            System.out.println(" ");
-        }
-        for(int n[] : nums)  //its called as for each loop, it is used to iterate through the elements of an array or a collection. It is a simpler way . its multi demensional array, so we have to use for each loop twice to iterate through the elements of the array.
-        {
-            for(int m : n)
-            {
-                System.out.print(m + " ");
-            }
-            System.out.println(" ");
-        }
-
+        human obj = new human();
+        obj.setAge(20);
+        obj.setName("keerthi");
+        System.out.println(obj.getName() + ":" + obj.getAge());
     }
 }
