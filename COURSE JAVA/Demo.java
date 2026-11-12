@@ -280,34 +280,115 @@
     // }
 // }
 
-class human{
-    private int age;
-    private String name;
-    public int getAge() {
-        return age;
-    }
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
+// class human{
+//     private int age;
+//     private String name;
+//     public int getAge() {
+//         return age;
+//     }
+//     public String getName() {
+//         return name;
+//     }
+//     public void setName(String name) {
+//         this.name = name;
+//     }
+//     public void setAge(int age) {
+//         this.age = age;
+//     }
 
     
 
+// }
+
+
+// class Demo
+// {
+//     public static void main(String args[]) 
+//     {
+//         human obj = new human();
+//         obj.setAge(20);
+//         obj.setName("keerthi");
+//         System.out.println(obj.getName() + ":" + obj.getAge());
+//     }
+// }
+
+// class Mobile
+// {
+//     String brand;
+//     int price;
+//     static String name;
+    
+//     public void show()
+//     {
+//         System.out.println(brand + " " +price + " " + name);
+//     }
+
+// }
+
+
+// public class Demo
+// {
+//     public static void main(String a[])
+//     {
+//         Mobile obj1=new Mobile();
+//         obj1.brand="Apple";
+//         obj1.price=5000;
+//         obj1.name="smartphone";
+
+//         Mobile obj2=new Mobile();
+//         obj2.brand="Samsung";
+//         obj2.price=4000;
+//         obj2.name="smartphone";
+
+//         Mobile.name="phone";
+
+//         obj1.show();
+//         obj2.show();
+//     }
+// }
+
+class Mobile
+{
+    String brand;
+    int price;
+    static String name;
+ 
+    static
+    {
+           name="smartphone";
+           System.out.println("static block");
+    }
+
+    public Mobile()
+    {
+        brand="Apple";
+        price=7000;
+        System.out.println("constructor");
+    }
+
+
+    public void show()
+    {
+        System.out.println(brand + " " +price + " " + name);
+    }
+
 }
 
-
-class Demo
+public class Demo
 {
-    public static void main(String args[]) 
+    public static void main(String a[])
     {
-        human obj = new human();
-        obj.setAge(20);
-        obj.setName("keerthi");
-        System.out.println(obj.getName() + ":" + obj.getAge());
+        Mobile obj1 = new Mobile();
+        obj1.brand="Apple";
+        obj1.price=100;
+        Mobile.name="smartphone";
+
+        Mobile obj2 = new Mobile();
+        obj2.brand="Samsung";
+        obj2.price=1500;
+        Mobile.name="phone";
+
+
+        obj1.show();
     }
 }
