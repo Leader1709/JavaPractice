@@ -347,48 +347,93 @@
 //     }
 // }
 
-class Mobile
-{
-    String brand;
-    int price;
-    static String name;
+// class Mobile
+// {
+//     String brand;
+//     int price;
+//     static String name;
  
-    static
+//     static
+//     {
+//            name="smartphone";
+//            System.out.println("static block");
+//     }
+
+//     public Mobile()
+//     {
+//         brand="Apple";
+//         price=7000;
+//         System.out.println("constructor");
+//     }
+
+
+//     public void show()
+//     {
+//         System.out.println(brand + " " +price + " " + name);
+//     }
+
+// }
+
+// public class Demo
+// {
+//     public static void main(String a[])
+//     {
+//         Mobile obj1 = new Mobile();
+//         obj1.brand="Apple";
+//         obj1.price=100;
+//         Mobile.name="smartphone";
+
+//         Mobile obj2 = new Mobile();
+//         obj2.brand="Samsung";
+//         obj2.price=1500;
+//         Mobile.name="phone";
+
+
+//         obj1.show();
+//     }
+// }
+
+
+
+// class A
+// {
+//     public void show()
+//     {
+//         System.out.println("A is called");
+//     }
+// }
+
+// public class Demo 
+// {
+    
+//     public static void main(String args[])
+//     {
+//         A obj = new A();
+//         obj.show();
+//     }
+// }
+
+class Calc
+{
+    public int add(int n1, int n2)
     {
-           name="smartphone";
-           System.out.println("static block");
+        return n1+n2;
     }
-
-    public Mobile()
+    public int m(int n1, int n2)
     {
-        brand="Apple";
-        price=7000;
-        System.out.println("constructor");
+        return n1*n2;
     }
-
-
-    public void show()
-    {
-        System.out.println(brand + " " +price + " " + name);
-    }
-
 }
 
-public class Demo
+class Demo
 {
-    public static void main(String a[])
+    public static void main(String args[])
     {
-        Mobile obj1 = new Mobile();
-        obj1.brand="Apple";
-        obj1.price=100;
-        Mobile.name="smartphone";
+        Calc obj = new Calc();
+        int result = obj.add(4, 5);
+        System.out.println("The sum of two numbers is: " + result);
 
-        Mobile obj2 = new Mobile();
-        obj2.brand="Samsung";
-        obj2.price=1500;
-        Mobile.name="phone";
-
-
-        obj1.show();
+        int result1 = obj.m(4, 5);
+        System.out.println("The product of two numbers is: " + result1);
     }
 }
