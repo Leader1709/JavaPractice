@@ -413,15 +413,77 @@
 //     }
 // }
 
-class Calc
+// class Calc
+// {
+//     public int add(int n1, int n2)
+//     {
+//         return n1+n2;
+//     }
+//     public int m(int n1, int n2)
+//     {
+//         return n1*n2;
+//     }
+// }
+
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         Calc obj = new Calc();
+//         int result = obj.add(4, 5);
+//         System.out.println("The sum of two numbers is: " + result);
+
+//         int result1 = obj.m(4, 5);
+//         System.out.println("The product of two numbers is: " + result1);
+//     }
+// }
+
+
+// class Demo
+// {
+//     public double power(int n1, int n2)
+//     {
+//         return Math.pow(n1, n2); // it will return the value of n1 raised to the power of n2
+//     }
+// }
+
+
+
+// public class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         Calc obj = new Calc();
+//         int r1 = obj.add(4, 5);
+//         int r2 = obj.sub(4, 5);
+//         int r3 = obj.mul(4, 5);
+//         int r4 = obj.div(4, 5);
+
+//         System.out.println(r1 + " " + "The sum of two numbers is: " + r1);
+//         System.out.println(r2 + " " + "The difference of two numbers is: " + r2);
+//         System.out.println(r3 + " " + "The product of two numbers is: " + r3);
+//         System.out.println(r4 + " " + "The quotient of two numbers is: " + r4);
+//     }
+// }
+
+
+
+class a
 {
-    public int add(int n1, int n2)
+    public a()
     {
-        return n1+n2;
+        super(); // Calls the constructor of the Object class
+        System.out.println("a is called");
     }
-    public int m(int n1, int n2)
+    
+}
+
+class b extends a
+{
+    public b()
     {
-        return n1*n2;
+        super(); // Calls the constructor of class a
+        System.out.println("b is called");
     }
 }
 
@@ -429,11 +491,7 @@ class Demo
 {
     public static void main(String args[])
     {
-        Calc obj = new Calc();
-        int result = obj.add(4, 5);
-        System.out.println("The sum of two numbers is: " + result);
-
-        int result1 = obj.m(4, 5);
-        System.out.println("The product of two numbers is: " + result1);
+        
+        b obj = new b( ); // it will call the constructor of class b and then the constructor of class a
     }
 }
