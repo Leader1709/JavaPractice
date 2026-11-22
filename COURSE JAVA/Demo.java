@@ -468,30 +468,65 @@
 
 
 
-class a
-{
-    public a()
-    {
-        super(); // Calls the constructor of the Object class
-        System.out.println("a is called");
-    }
+// class a
+// {
+//     public a()
+//     {
+//         super(); // Calls the constructor of the Object class
+//         System.out.println("a is called");
+//     }
     
-}
+// }
 
-class b extends a
+// class b extends a
+// {
+//     public b()
+//     {
+//         super(); // Calls the constructor of class a
+//         System.out.println("b is called");
+//     }
+// }
+
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+        
+//         b obj = new b( ); // it will call the constructor of class b and then the constructor of class a
+//     }
+// }
+
+class Laptop
 {
-    public b()
+    String model;
+    int price;
+    
+
+    public String toString()
     {
-        super(); // Calls the constructor of class a
-        System.out.println("b is called");
+        return  model + ", Price: " + price;
+    }
+
+    public boolean equals(Laptop that)
+    {
+        if (this.model.equals(that.model) && this.price == that.price)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
 
-class Demo
+public class Demo
 {
     public static void main(String args[])
     {
-        
-        b obj = new b( ); // it will call the constructor of class b and then the constructor of class a
+        Laptop obj1 = new Laptop();
+        obj1.model = "Dell";
+        obj1.price = 1000;
+        System.out.println(obj1);
     }
 }
