@@ -496,37 +496,70 @@
 //     }
 // }
 
-class Laptop
-{
-    String model;
-    int price;
+// class Laptop
+// {
+//     String model;
+//     int price;
     
 
-    public String toString()
+//     public String toString()
+//     {
+//         return  model + ", Price: " + price;
+//     }
+
+//     public boolean equals(Laptop that)
+//     {
+//         if (this.model.equals(that.model) && this.price == that.price)
+//         {
+//             return true;
+//         }
+//         else
+//         {
+//             return false;
+//         }
+//     }
+// }
+
+// public class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         Laptop obj1 = new Laptop();
+//         obj1.model = "Dell";
+//         obj1.price = 1000;
+//         System.out.println(obj1);
+//     }
+// }
+
+
+// dowm costing
+
+class A
+{
+    public void show1()
     {
-        return  model + ", Price: " + price;
+        System.out.println("A is called");
     }
 
-    public boolean equals(Laptop that)
-    {
-        if (this.model.equals(that.model) && this.price == that.price)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
 }
+class B extends A
+{
+    public void show2()
+    {
+        System.out.println("B is called");
+    }
+
+}
+
 
 public class Demo
 {
     public static void main(String args[])
     {
-        Laptop obj1 = new Laptop();
-        obj1.model = "Dell";
-        obj1.price = 1000;
-        System.out.println(obj1);
+         B obj = new B();
+        obj.show1();
+
+        B obj1 = (B) obj; // downcasting
+        obj1.show2();
     }
 }
