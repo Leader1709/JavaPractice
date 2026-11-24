@@ -534,32 +534,143 @@
 
 // dowm costing
 
+// class A
+// {
+//     public void show1()
+//     {
+//         System.out.println("A is called");
+//     }
+
+// }
+// class B extends A
+// {
+//     public void show2()
+//     {
+//         System.out.println("B is called");
+//     }
+
+// }
+
+
+// public class Demo
+// {
+//     public static void main(String args[])
+//     {
+//          B obj = new B();
+//         obj.show1();
+
+//         B obj1 = (B) obj; // downcasting
+//         obj1.show2();
+//     }
+// }
+
+
+
+
+//  abstract class car
+// {
+
+//     public abstract void drive();
+//     public abstract void fly();
+//     public void playMusic()
+//     {
+//         System.out.println("Playing music");
+//     }
+// }
+
+// class Mustang extends car
+// {
+//     public void drive()
+//     {
+//         System.out.println("Driving Mustang");
+//     }
+// }
+
+// class UpdatedMustang extends Mustang
+// {
+//     public void fly()
+//     {
+//         System.out.println("Flying Mustang");
+//     }
+// }
+
+
+// public class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         car obj = new UpdatedMustang();
+//         obj.drive();
+//         obj.playMusic();
+//         obj.fly();
+//     }
+// }
+
+
+// inner class - A class defined within another class is called an inner class. An inner class can access the members of the outer class, including private members. Inner classes are used to logically group classes that are only used in one place, increase encapsulation, and can lead to more readable and maintainable code.
+
+
+// class A
+// {
+//     int age;  // outer class can access the members of the inner class, but it cannot access the private members of the inner class
+
+//     public void show()
+//     {
+//         System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
+//     }
+
+//     class B   // inner class
+//     {
+//         public void config()  // inner class can access the members of the outer class, including private members
+//         {
+//             System.out.println("is config");
+//         }
+//     }
+// }
+
+
+
 class A
 {
-    public void show1()
+    public void show()
     {
-        System.out.println("A is called");
+        System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
     }
-
 }
+
 class B extends A
 {
-    public void show2()
+    public void show()
     {
-        System.out.println("B is called");
+        System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
     }
-
 }
 
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         A obj = new A();       // creating an object of the outer class A
+//         obj.show();    // calling the method of the outer class A
 
-public class Demo
+//         B obj1 = new B();   // creating an object of the inner class B using the object of the outer class A
+//         obj1.show();  // calling the method of the inner class B
+//     }
+// }
+
+
+class Demo
 {
     public static void main(String args[])
     {
-         B obj = new B();
-        obj.show1();
-
-        B obj1 = (B) obj; // downcasting
-        obj1.show2();
+        A obj = new A()
+        {
+            public void show()
+            {
+                System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
+            }   
+        };
+        obj.show();    // calling the method of the outer class A
+        // annonymous class - A class without a name is called an anonymous class. It is used to override the method of a class or an interface. It is used to create an object of a class without creating a separate class. It is used to create an object of a class that has only one method. It is used to create an object of a class that has only one method and that method is overridden.
     }
 }
