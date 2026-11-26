@@ -630,21 +630,21 @@
 
 
 
-class A
-{
-    public void show()
-    {
-        System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
-    }
-}
+// class A
+// {
+//     public void show()
+//     {
+//         System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
+//     }
+// }
 
-class B extends A
-{
-    public void show()
-    {
-        System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
-    }
-}
+// class B extends A
+// {
+//     public void show()
+//     {
+//         System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
+//     }
+// }
 
 // class Demo
 // {
@@ -659,18 +659,45 @@ class B extends A
 // }
 
 
-class Demo
-{
-    public static void main(String args[])
-    {
-        A obj = new A()
-        {
-            public void show()
-            {
-                System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
-            }   
-        };
-        obj.show();    // calling the method of the outer class A
-        // annonymous class - A class without a name is called an anonymous class. It is used to override the method of a class or an interface. It is used to create an object of a class without creating a separate class. It is used to create an object of a class that has only one method. It is used to create an object of a class that has only one method and that method is overridden.
-    }
-}
+// class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         A obj = new A()
+//         {
+//             public void show()
+//             {
+//                 System.out.println("is show");    // outer class can access the members of the inner class, but it cannot access the private members of the inner class
+//             }   
+//         };
+//         obj.show();    // calling the method of the outer class A
+//         // annonymous class - A class without a name is called an anonymous class. It is used to override the method of a class or an interface. It is used to create an object of a class without creating a separate class. It is used to create an object of a class that has only one method. It is used to create an object of a class that has only one method and that method is overridden.
+//     }
+// }
+
+// class Laptop
+// {
+//     public void code()
+//     {
+//         System.out.println("Coding is in progress");
+//     }
+// }
+
+// class Developer
+// {
+//     public void devApp(Laptop lap)
+//     {
+//         lap.code();
+//     }
+// }
+
+// public class Demo
+// {
+//     public static void main(String args[])
+//     {
+//         Developer dev = new Developer();
+//         Laptop lap = new Laptop();
+//         dev.devApp(lap);
+//     }
+// }
+
